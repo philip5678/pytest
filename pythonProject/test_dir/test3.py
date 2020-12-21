@@ -79,7 +79,7 @@ def test_google_search_furniture():
 
 
 if __name__ == '__main__':
-    pytest.main() #运行当前目录下所有 包括子目录
+    pytest.main() #运行当前目录或pytest.ini中指定目录下所有 包括子目录
     # pytest.main(['../test_dir']) #运行指定目录
     # pytest.main(['../test_dir/test3.py']) #运行指定文件（模块）
     # pytest.main(['../test_dir/test3.py::test_google_search_furniture']) #运行指定函数
