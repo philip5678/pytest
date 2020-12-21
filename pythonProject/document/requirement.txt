@@ -1,0 +1,18 @@
+pip
+setuptools
+wheel
+pytest
+pytest-xdist
+pytest-ordering
+pytest-rerunfailures
+pytest-html
+allure-pytest
+pytest-sugar
+pytest-cov
+selenium
+virtualenv
+
+以上是注释，安装时要临时删除它们：
+python包安装或者用：
+python -m pip install --upgrade -r ./document/requirement.txt
+pip install -r ./document/requirement.txt

@@ -1,0 +1,10 @@
+[pytest]
+addopts =-v -s --reruns=2 --html=../report/report.html --alluredir=../report/allure --cov=../test_dir  --cov-report=html -m="smoke"
+testpaths = ./test_dir/
+python_files = test*.py
+python_classes = Test*
+python_functions = test*
+markers=
+    smoke:冒烟测试
+    usermanagement:用户管理
+    productmanagement:产品管理
