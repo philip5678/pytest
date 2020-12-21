@@ -18,3 +18,20 @@ pytest ../test_dir/test3.py  测试的文件路径，可以到具体的文件，
 @pytest.mark.skip()
 @pytest.mark.parametrize()
 @pytest.mark.xfail(sys.version_info >= (3, 6), reason="python3.6 api changes")
+
+
+https://www.cnblogs.com/Neeo/articles/11832655.html
+setup和teardown#
+我们知道，在unittest中，setup和teardown可以在每个用例前后执行，也可以在所有的用例集执行前后执行。那么在pytest中，有以下几种情况：
+模块级别，也就是在整个测试脚本文件中的用例集开始前后，对应的是：
+setup_module
+teardown_module
+类级别，在类中的所有用例集执行前后，对应的是：
+setup_class
+teardown_class
+在类中呢，也可以在进一步划分，在每一个方法执行前后，对应：
+setup_method
+teardown_method
+函数级别，在用例函数之前后，对应：
+setup_function
+teardown_function

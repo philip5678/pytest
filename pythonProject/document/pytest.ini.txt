@@ -8,3 +8,5 @@ markers=
     smoke:冒烟测试
     usermanagement:用户管理
     productmanagement:产品管理
+
+它是一个全局的设置文件

@@ -42,7 +42,7 @@ searchList = ['cheese', 'apple', 'pearl', 'cherry']
 @allure.feature('search')
 @allure.story('food')
 @pytest.mark.parametrize('searchItem', searchList)
-@pytest.mark.productmanagement #在pytest.ini中还要设置markers
+@pytest.mark.productmanagement  # 在pytest.ini中还要设置markers
 def test_google_search(searchItem):
     global driver
     wait = WebDriverWait(driver, 10)
@@ -51,19 +51,20 @@ def test_google_search(searchItem):
     driver.find_element_by_name("q").send_keys(
         searchItem + Keys.RETURN)  # 加回车进行搜索
     first_result = wait.until(presence_of_element_located((By.CSS_SELECTOR, "#rcnt")))
-    print(first_result.get_attribute("textContent"))
-    print('title: ' + driver.title)
+    # print(first_result.get_attribute("textContent"))
+    # print('title: ' + driver.title)
     assert 'Google' in driver.title
 
 
-@allure.title('测试用例标题1')
-@allure.description('这是测试用例用例1的描述信息')
+@allure.step(title="first step")
+@allure.title('测试用例标题2')
+@allure.description('这是测试用例用例2的描述信息')
 @allure.feature('search')
 @allure.story('utility')
 @pytest.mark.run(order=3)
-@pytest.mark.smoke #在pytest.ini中还要设置markers
+@pytest.mark.smoke  # 在pytest.ini中还要设置markers
 def test_google_search_product():
-    print('search item')
+    print('search product')
     time.sleep(1)
 
 
@@ -72,17 +73,26 @@ def test_google_search_product():
 @pytest.mark.run(order=1)
 @allure.feature('sales')
 @allure.story('furniture')
-@pytest.mark.usermanagement #在pytest.ini中还要设置markers
+@pytest.mark.usermanagement  # 在pytest.ini中还要设置markers
 def test_google_search_furniture():
     print('search furniture')
     time.sleep(1)
 
 
+@pytest.fixture(scope="function", params="", autouse=True, ids="", name="")
+def my_fixture():
+    print("fixture practice")
+
+
+def test_fixture(self, my_fixture):
+    print("fixture 前置")
+
+
 if __name__ == '__main__':
-    pytest.main() #运行当前目录或pytest.ini中指定目录下所有 包括子目录
-    # pytest.main(['../test_dir']) #运行指定目录
-    # pytest.main(['../test_dir/test3.py']) #运行指定文件（模块）
-    # pytest.main(['../test_dir/test3.py::test_google_search_furniture']) #运行指定函数
-    # pytest.main(['../test_dir/main.py::TestStringMethods::test_upper']) #运行指定类中的方法
+    pytest.main()  # 按pytest.ini设置运行
+    # pytest.main(['../test_dir']) #运行指定目录，并重载pytest.ini
+    # pytest.main(['../test_dir/test3.py']) #运行指定文件（模块），并重载pytest.ini
+    # pytest.main(['../test_dir/test3.py::test_google_search_furniture']) #运行指定函数，并重载pytest.ini
+    # pytest.main(['../test_dir/main.py::TestStringMethods::test_upper']) #运行指定类中的方法，并重载pytest.ini
     # pytest.main(["test3.py", "-s", "--alluredir=../report/allure"]) #设置在pytest.ini中
     os.system("allure serve ../report/allure")
