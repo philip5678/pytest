@@ -51,8 +51,8 @@ def test_google_search(searchItem):
     driver.find_element_by_name("q").send_keys(
         searchItem + Keys.RETURN)  # 加回车进行搜索
     first_result = wait.until(presence_of_element_located((By.CSS_SELECTOR, "#rcnt")))
-    # print(first_result.get_attribute("textContent"))
-    # print('title: ' + driver.title)
+    print(first_result.get_attribute("textContent"))
+    print('title: ' + driver.title)
     assert 'Google' in driver.title
 
 
@@ -79,12 +79,14 @@ def test_google_search_furniture():
     time.sleep(1)
 
 
-@pytest.fixture(scope="function", params="", autouse=True, ids="", name="")
-def my_fixture():
-    print("fixture practice")
+@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], autouse=True, ids="", name="")
+def my_fixture(request):
+    print("前置fixture practice")
+    yield request.param
+    print("后置 fixture practice")
 
 
-def test_fixture(self, my_fixture):
+def test_fixture(my_fixture):  # 当autouse=False时，要手动加上用fixture
     print("fixture 前置")
 
 
