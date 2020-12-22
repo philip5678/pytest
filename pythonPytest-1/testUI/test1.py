@@ -19,4 +19,3 @@ class TestCaseDemo:
         print(kwargs)
         print(kwargs.get('cherry'))
 
-
