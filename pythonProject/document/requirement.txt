@@ -11,6 +11,7 @@ pytest-sugar
 pytest-cov
 selenium
 virtualenv
+pyyaml
 
 以上是注释，安装时要临时删除它们：
 python包安装或者用：
