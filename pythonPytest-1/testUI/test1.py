@@ -1,5 +1,4 @@
 import os
-
 import pytest
 # from ddt import ddt, file_data
 import allure
@@ -18,5 +17,3 @@ class TestCaseDemo:
         print("kwargs:")
         print(kwargs)
         print(kwargs.get('cherry'))
-
-
