@@ -13,10 +13,11 @@ pytest ../test_dir/test3.py  测试的文件路径，可以到具体的文件，
 -m="smoke or usermanagement" 分组(冒烟、模块、接口、web等测试)执行：标志要执行的文件 可以用or 或 and 联结，在ini文件与py文件中都要先marker和mark
 
 @pytest.mark的用法：
-@pytest.mark.run(XXX)
+@pytest.mark.xxx  分组(冒烟、模块、接口、web等测试)执行：标志要执行的文件 可以用or 或 and 联结，在ini文件与py文件中都要先marker和mark
+@pytest.mark.run(order=X)
 @pytest.mark.skipif()
 @pytest.mark.skip()
-@pytest.mark.parametrize()
+@pytest.mark.parametrize()  #注意与@pytest.fixture中的参数区别，一个是fixture，一个是测试用例
 @pytest.mark.xfail(sys.version_info >= (3, 6), reason="python3.6 api changes")
 
 
@@ -35,3 +36,6 @@ teardown_method
 函数级别，在用例函数之前后，对应：
 setup_function
 teardown_function
+
+@pytest.fixture(scope="function", params=[' - 中国队', ' - 加拿大队', ' - 美国队'], ids=["China", "Canada", "USA"],
+                name="fixture_alias")

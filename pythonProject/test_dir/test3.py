@@ -56,6 +56,9 @@ def test_google_search(searchItem):
     assert 'Google' in driver.title
 
 
+product_list = [{'apple', 2}, {'cherry', 5}]
+
+
 @allure.step(title="first step")
 @allure.title('测试用例标题2')
 @allure.description('这是测试用例用例2的描述信息')
@@ -63,8 +66,9 @@ def test_google_search(searchItem):
 @allure.story('utility')
 @pytest.mark.run(order=3)
 @pytest.mark.smoke  # 在pytest.ini中还要设置markers
-def test_google_search_product():
-    print('search product')
+@pytest.mark.parametrize('product', product_list)
+def test_google_search_product(product):
+    print(product)
     time.sleep(1)
 
 
