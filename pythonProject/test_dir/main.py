@@ -1,6 +1,14 @@
+import logging
 import unittest
 import HtmlTestRunner
+import pytest
+from pytest import fixture
 
+import logging
+
+caplog = logging.getLogger(__name__)
+
+caplog.info("logging information")
 
 class TestStringMethods(unittest.TestCase):
 
@@ -9,6 +17,8 @@ class TestStringMethods(unittest.TestCase):
 
     def test_error(self):
         """ This test should be marked as error one. """
+        caplog.set_level(logging.INFO)
+        caplog.set_level(logging.CRITICAL, logger="root.baz")
         raise ValueError
 
     def test_fail(self):

@@ -79,22 +79,25 @@ def test_google_search_furniture():
     time.sleep(1)
 
 
-@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], autouse=True, ids="", name="")
+@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], autouse=True, ids=['1', '11', '111'], name="qqq")
 def my_fixture(request):
-    print("前置fixture practice")
+    print("前置 fixture practice")
     yield request.param
     print("后置 fixture practice")
 
 
-def test_fixture(my_fixture):  # 当autouse=False时，要手动加上用fixture
-    print("fixture 前置")
+def test_fixture(qqq):  # 当autouse=False时，要手动加上用fixture
+    print("fixture 前置 " + str(qqq))
 
 
 if __name__ == '__main__':
     pytest.main()  # 按pytest.ini设置运行
-    # pytest.main(['../test_dir']) #运行指定目录，并重载pytest.ini
-    # pytest.main(['../test_dir/test3.py']) #运行指定文件（模块），并重载pytest.ini
-    # pytest.main(['../test_dir/test3.py::test_google_search_furniture']) #运行指定函数，并重载pytest.ini
-    # pytest.main(['../test_dir/main.py::TestStringMethods::test_upper']) #运行指定类中的方法，并重载pytest.ini
-    # pytest.main(["test3.py", "-s", "--alluredir=../report/allure"]) #设置在pytest.ini中
-    os.system("allure serve ../report/allure")
+    # pytest.main(['../test_dir'])  # 运行指定目录，并重载pytest.ini
+    # pytest.main(['../test_dir/test3.py'])  # 运行指定文件（模块），并重载pytest.ini
+    # pytest.main(['../test_dir/test3.py::test_google_search_furniture'])  # 运行指定函数，并重载pytest.ini
+    # pytest.main(['../test_dir/main.py::TestStringMethods::test_upper'])  # 运行指定类中的方法，并重载pytest.ini
+    # pytest.main(["test3.py", "-s", "--alluredir=../report/allure-json"])  # 设置在pytest.ini中
+    # os.system("allure serve ../report/allure-json")  # 打开html形式的报告
+    # os.system("allure open ../report/allure-json")  # 打开json形式的报告
+    os.system("allure generate ../report/allure-json -o ../report/allure-html -c")  # 生成html形式的报告
+    os.system("allure open ../report/allure-html")  # 打开html形式的报告

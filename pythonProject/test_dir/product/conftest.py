@@ -1,7 +1,7 @@
 import pytest
 
 
-@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], ids="", name="")
+@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], ids=["-China", "-Canada", "-USA"], name="")
 def my_fixture01():
     print("前置 01 fixture practice")
     yield "success"  # 如果是空就是none
