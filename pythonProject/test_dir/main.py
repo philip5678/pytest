@@ -10,6 +10,7 @@ caplog = logging.getLogger(__name__)
 
 caplog.info("logging information")
 
+
 class TestStringMethods(unittest.TestCase):
 
     def test_upper(self):
@@ -19,6 +20,7 @@ class TestStringMethods(unittest.TestCase):
         """ This test should be marked as error one. """
         caplog.set_level(logging.INFO)
         caplog.set_level(logging.CRITICAL, logger="root.baz")
+        caplog.info("test_error function")
         raise ValueError
 
     def test_fail(self):
