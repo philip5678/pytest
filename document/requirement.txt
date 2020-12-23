@@ -15,9 +15,21 @@ pytest-sugar
 
 selenium
 virtualenv
+
 pyyaml
+pandas
+json
+PyMySQL
+xlutils
+xlwt
+
+requests
+
+
 
 以上是注释，安装时要临时删除它们：
 python包安装或者用：
 python -m pip install --upgrade -r ./document/requirement.txt
 pip install -r ./document/requirement.txt
+
+输入pip list ，查看已安装的第三方库：

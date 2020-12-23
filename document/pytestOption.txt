@@ -1,7 +1,7 @@
 在terminal里的命令行运行参数设置（在pytest.ini文件中类似）：
 
 pytest ../test_dir/test3.py  测试的文件路径，可以到具体的文件，也可以是目录，即它整个目录下的所有文件 需要包：pytest
--vs -s显示调试信息和-v显示详细路径，
+-vs -s显示调试信息和-v显示详细路径，vs可以分开，也可以合在一起
 -n=auto 选择线程数 需要包：pytest-xdist
 --reruns=2 错误要重运行的次数 需要包：pytest-rerunfailures
 --html=../report/report.html 包pytest-html产生的报告存放位置
