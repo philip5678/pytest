@@ -16,6 +16,6 @@ if __name__ == '__main__':
     # os.system("allure generate ./report/allure-json -o ./report/allure-html -c")  # 生成html形式的报告
     # os.system("allure open ./report/allure-html")  # 打开html形式的报告
 
-    root_path="C:/Users/zhb68/PycharmProjects/pythonPytest-1/"
+    root_path = "C:/Users/zhb68/PycharmProjects/pythonProject/"
     os.system(f"allure generate {root_path}report/allure-json -o {root_path}report/allure-html -c")  # 生成html形式的报告
-    os.system(f"allure open {root_path}report/allure-html")  # 打开html形式的报告
+    # os.system(f"allure open {root_path}report/allure-html")  # 打开html形式的报告
