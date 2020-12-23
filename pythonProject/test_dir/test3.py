@@ -1,5 +1,4 @@
 import time
-from _pytest import main
 import pytest
 import os
 import allure

@@ -4,7 +4,7 @@ import pytest
 from ddt import ddt, file_data
 
 log = logging.getLogger(__name__)
-
+log.info('star')
 
 def test01():
     print('test01')

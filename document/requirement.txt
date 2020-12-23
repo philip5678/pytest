@@ -18,12 +18,15 @@ virtualenv
 
 pyyaml
 pandas
-json
+
 PyMySQL
 xlutils
 xlwt
 
-requests
+numpy==1.19.3
+xlrd==1.2.0
+
+
 
 
 
@@ -33,3 +36,175 @@ python -m pip install --upgrade -r ./document/requirement.txt
 pip install -r ./document/requirement.txt
 
 输入pip list ，查看已安装的第三方库：
+
+问题描述：
+pip install xlrd==1.2.0 #才可打开xlsx文件
+
+问题描述：
+RuntimeError: The current Numpy installation ('D:\\soft1\\Python37\\lib\\site-packages\\numpy\\__init__.py') fails to pass a sanity check due to a bug in the windows runtime. See this issue for more information: https://tinyurl.com/y3dm3h86
+解决方案：
+先卸载numpy：pip uninstall numpy
+在安装：pip install numpy==1.19.3
+
+
+Python一键安装全部依赖包 
+https://blog.csdn.net/kenhins/article/details/80813155?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+
+pip 导出所有依赖并保存在一个文件中，如：requirements.txt(名字任取，也可以用package.txt)用来记录项目所有现已安装好的依赖包和版本号，
+只需要一个简单的点子命令就能完成。 
+pip freeze > requirements.txt
+
+然后就可以用 
+pip install -r requirements.txt
+来一次性安装requirements.txt里面所有的依赖包，真是非常方便。 
+
+pip卸载python包且默认采用yes 
+https://blog.csdn.net/ningyanggege/article/details/104700943 
+pip uninstall -y -r requirements.txt
+
+
+
+
+pip list
+Package                       Version
+----------------------------- -----------
+alabaster                     0.7.12
+allure-pytest                 2.8.29
+allure-python-commons         2.8.29
+apipkg                        1.5
+appdirs                       1.4.4
+argon2-cffi                   20.1.0
+astroid                       2.4.2
+async-generator               1.10
+atomicwrites                  1.4.0
+attrs                         20.3.0
+autopep8                      1.5.4
+Babel                         2.9.0
+backcall                      0.2.0
+bleach                        3.2.1
+certifi                       2020.12.5
+cffi                          1.14.4
+chardet                       4.0.0
+colorama                      0.4.4
+coverage                      5.3.1
+cycler                        0.10.0
+Cython                        0.29.21
+dask                          2020.12.0
+decorator                     4.4.2
+defusedxml                    0.6.0
+distlib                       0.3.1
+docutils                      0.16
+entrypoints                   0.3
+execnet                       1.7.1
+filelock                      3.0.12
+h5py                          3.1.0
+html-testRunner               1.2.1
+idna                          2.10
+imageio                       2.9.0
+imagesize                     1.2.0
+iniconfig                     1.1.1
+ipykernel                     5.4.2
+ipyparallel                   6.3.0
+ipython                       7.19.0
+ipython-genutils              0.2.0
+ipywidgets                    7.5.1
+isort                         5.6.4
+jedi                          0.17.2
+Jinja2                        2.11.2
+joblib                        1.0.0
+jsonschema                    3.2.0
+jupyter                       1.0.0
+jupyter-client                6.1.7
+jupyter-console               6.2.0
+jupyter-core                  4.7.0
+jupyterlab-pygments           0.1.2
+Keras                         2.4.3
+kiwisolver                    1.3.1
+lazy-object-proxy             1.4.3
+MarkupSafe                    1.1.1
+matplotlib                    3.3.3
+mccabe                        0.6.1
+mistune                       0.8.4
+mpmath                        1.1.0
+nbclient                      0.5.1
+nbconvert                     6.0.7
+nbformat                      5.0.8
+nest-asyncio                  1.4.3
+networkx                      2.5
+nose                          1.3.7
+notebook                      6.1.5
+numpy                         1.19.3
+numpydoc                      1.1.0
+packaging                     20.8
+pandas                        1.1.5
+pandocfilters                 1.4.3
+parso                         0.7.1
+pickleshare                   0.7.5
+Pillow                        8.0.1
+pip                           20.3.3
+pluggy                        0.13.1
+prometheus-client             0.9.0
+prompt-toolkit                3.0.8
+py                            1.10.0
+pycodestyle                   2.6.0
+pycparser                     2.20
+pygame                        2.0.0
+Pygments                      2.7.3
+pylint                        2.6.0
+pyparsing                     2.4.7
+pyrsistent                    0.17.3
+pytest                        6.2.1
+pytest-cov                    2.10.1
+pytest-forked                 1.3.0
+pytest-html                   3.1.1
+pytest-metadata               1.11.0
+pytest-ordering               0.6
+pytest-rerunfailures          9.1.1
+pytest-sugar                  0.9.4
+pytest-xdist                  2.2.0
+python-dateutil               2.8.1
+pytz                          2020.4
+PyWavelets                    1.1.1
+pywin32                       300
+pywinpty                      0.5.7
+PyYAML                        5.3.1
+pyzmq                         20.0.0
+qtconsole                     5.0.1
+QtPy                          1.9.0
+requests                      2.25.1
+scikit-image                  0.18.1
+scikit-learn                  0.24.0
+scipy                         1.5.4
+seaborn                       0.11.1
+selenium                      3.141.0
+Send2Trash                    1.5.0
+setuptools                    51.1.0
+six                           1.15.0
+snowballstemmer               2.0.0
+Sphinx                        3.4.0
+sphinxcontrib-applehelp       1.0.2
+sphinxcontrib-devhelp         1.0.2
+sphinxcontrib-htmlhelp        1.0.3
+sphinxcontrib-jsmath          1.0.1
+sphinxcontrib-qthelp          1.0.3
+sphinxcontrib-serializinghtml 1.1.4
+sympy                         1.7.1
+termcolor                     1.1.0
+terminado                     0.9.1
+testpath                      0.4.4
+threadpoolctl                 2.1.0
+tifffile                      2020.12.8
+toml                          0.10.2
+torch                         1.7.1
+torchvision                   0.2.2.post3
+tornado                       6.1
+traitlets                     5.0.5
+typing-extensions             3.7.4.3
+urllib3                       1.26.2
+virtualenv                    20.2.2
+wcwidth                       0.2.5
+webencodings                  0.5.1
+wheel                         0.36.2
+widgetsnbextension            3.5.1
+wrapt                         1.12.1
+xlrd                          1.2.0

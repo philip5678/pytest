@@ -1,8 +1,27 @@
+
 python -m pip install --upgrade pip setuptools wheel
+
 python -m pip install  pytest allure-pytest selenium virtualenv
-npm install -g allure-commandline
+
+npm install -g allure-commandline（这里用npm安装命令行）
 
 
 python包安装或者用：
 python -m pip install --upgrade -r ./document/requirement.txt
 pip install -r ./document/requirement.txt
+
+
+Python一键安装全部依赖包 
+https://blog.csdn.net/kenhins/article/details/80813155?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
+
+pip 导出所有依赖并保存在一个文件中，如：requirements.txt(名字任取，也可以用package.txt)用来记录项目所有现已安装好的依赖包和版本号，
+只需要一个简单的点子命令就能完成。 
+pip freeze > requirements.txt
+
+然后就可以用 
+pip install -r requirements.txt
+来一次性安装requirements.txt里面所有的依赖包，真是非常方便。 
+
+pip卸载python包且默认采用yes 
+https://blog.csdn.net/ningyanggege/article/details/104700943 
+pip uninstall -y -r requirements.txt

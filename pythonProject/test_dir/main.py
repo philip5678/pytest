@@ -4,7 +4,7 @@ import logging
 import unittest
 from unittest import TestCase
 
-import HtmlTestRunner
+import HTMLTestRunner
 import pytest
 from selenium import webdriver
 
@@ -79,4 +79,4 @@ class TestStringMethods(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='report/html'))
+    unittest.main()
