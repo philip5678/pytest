@@ -1,28 +1,29 @@
-2020-12-23-16-37-58 - main.py - main - setUpClass - 18 - INFO - setup_class()
-2020-12-23-16-38-01 - remote_connection.py - remote_connection - _request - 388 - DEBUG - POST http://127.0.0.1:63236/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true}}, "desiredCapabilities": {"browserName": "firefox", "acceptInsecureCerts": true, "marionette": true}}
-2020-12-23-16-38-01 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:63236
-2020-12-23-16-38-07 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://127.0.0.1:63236 "POST /session HTTP/1.1" 200 728
-2020-12-23-16-38-07 - remote_connection.py - remote_connection - _request - 440 - DEBUG - Finished Request
-2020-12-23-16-38-07 - remote_connection.py - remote_connection - _request - 388 - DEBUG - POST http://127.0.0.1:63236/session/99bcf0a7-c38f-42a6-a5fb-9e28ed288613/url {"url": "http://www.baidu.com"}
-2020-12-23-16-38-11 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://127.0.0.1:63236 "POST /session/99bcf0a7-c38f-42a6-a5fb-9e28ed288613/url HTTP/1.1" 200 14
-2020-12-23-16-38-11 - remote_connection.py - remote_connection - _request - 440 - DEBUG - Finished Request
-2020-12-23-16-38-11 - main.py - main - setUpClass - 21 - INFO - xxxxxxxxxxxxxxx
-2020-12-23-16-38-11 - main.py - main - setUp - 28 - INFO - 
+2020-12-23-19-50-43 - main.py - main - setUpClass - 18 - INFO - setup_class()
+2020-12-23-19-50-46 - remote_connection.py - remote_connection - _request - 388 - DEBUG - POST http://127.0.0.1:52836/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "firefox", "acceptInsecureCerts": true}}, "desiredCapabilities": {"browserName": "firefox", "acceptInsecureCerts": true, "marionette": true}}
+2020-12-23-19-50-46 - connectionpool.py - connectionpool - _new_conn - 231 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:52836
+2020-12-23-19-50-51 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://127.0.0.1:52836 "POST /session HTTP/1.1" 200 728
+2020-12-23-19-50-51 - remote_connection.py - remote_connection - _request - 440 - DEBUG - Finished Request
+2020-12-23-19-50-51 - remote_connection.py - remote_connection - _request - 388 - DEBUG - POST http://127.0.0.1:52836/session/521d2fd4-6318-4cfb-a007-c029fd611f41/url {"url": "http://www.baidu.com"}
+2020-12-23-19-50-55 - connectionpool.py - connectionpool - _make_request - 461 - DEBUG - http://127.0.0.1:52836 "POST /session/521d2fd4-6318-4cfb-a007-c029fd611f41/url HTTP/1.1" 200 14
+2020-12-23-19-50-55 - remote_connection.py - remote_connection - _request - 440 - DEBUG - Finished Request
+2020-12-23-19-50-55 - main.py - main - setUpClass - 21 - INFO - xxxxxxxxxxxxxxx
+2020-12-23-19-50-55 - main.py - main - setUp - 28 - INFO - 
 setup_method()
-2020-12-23-16-38-11 - main.py - main - test_4 - 54 - INFO - - test_4()
-2020-12-23-16-38-11 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
-2020-12-23-16-38-11 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
-2020-12-23-16-38-11 - main.py - main - screen_shot - 33 - INFO - sereen_shot
-2020-12-23-16-38-11 - main.py - main - setUp - 28 - INFO - 
+2020-12-23-19-50-55 - main.py - main - test_4 - 54 - INFO - - test_4()
+2020-12-23-19-50-55 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
+2020-12-23-19-50-55 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
+2020-12-23-19-50-55 - main.py - main - screen_shot - 33 - INFO - sereen_shot
+2020-12-23-19-50-55 - main.py - main - setUp - 28 - INFO - 
 setup_method()
-2020-12-23-16-38-11 - main.py - main - test_5 - 57 - INFO - - test_4()
-2020-12-23-16-38-11 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
-2020-12-23-16-38-11 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
-2020-12-23-16-38-11 - main.py - main - screen_shot - 33 - INFO - sereen_shot
-2020-12-23-16-38-11 - main.py - main - setUp - 28 - INFO - 
+2020-12-23-19-50-55 - main.py - main - test_5 - 57 - INFO - - test_4()
+2020-12-23-19-50-55 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
+2020-12-23-19-50-55 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
+2020-12-23-19-50-55 - main.py - main - screen_shot - 33 - INFO - sereen_shot
+2020-12-23-19-50-55 - main.py - main - setUp - 28 - INFO - 
 setup_method()
-2020-12-23-16-38-21 - main.py - main - test_7 - 47 - INFO - - test_7()
-2020-12-23-16-38-21 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
-2020-12-23-16-38-21 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
-2020-12-23-16-38-21 - main.py - main - screen_shot - 33 - INFO - sereen_shot
-2020-12-23-16-38-21 - main.py - main - teardown_class - 25 - INFO - teardown_class()
+2020-12-23-19-51-05 - main.py - main - test_7 - 47 - INFO - - test_7()
+2020-12-23-19-51-05 - main.py - main - tearDown - 41 - INFO - ffjiafuiodafdfj___teardown
+2020-12-23-19-51-05 - main.py - main - screen_shot - 32 - INFO - yyyyyyyyyyyyyy
+2020-12-23-19-51-05 - main.py - main - screen_shot - 33 - INFO - sereen_shot
+2020-12-23-19-51-05 - main.py - main - teardown_class - 25 - INFO - teardown_class()
+2020-12-23-19-51-05 - main.py - main - test_error - 68 - INFO - - test_error()

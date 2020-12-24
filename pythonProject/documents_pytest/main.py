@@ -2,8 +2,10 @@ import logging
 import os
 
 import pytest
+log = logging.getLogger(__name__)
 
 if __name__ == '__main__':
+    log.info("Test start....")
     pytest.main()  # 按pytest.ini设置运行
 
     # pytest.main(['./test_dir'])  # 运行指定目录，并重载pytest.ini
@@ -16,6 +18,6 @@ if __name__ == '__main__':
     # os.system("allure generate ./report/allure-json -o ./report/allure-html -c")  # 生成html形式的报告
     # os.system("allure open ./report/allure-html")  # 打开html形式的报告
 
-    root_path="C:/Users/zhb68/PycharmProjects/pythonProject/"
+    root_path = "C:/Users/zhb68/PycharmProjects/pythonProject/"
     os.system(f"allure generate {root_path}report/allure-json -o {root_path}report/allure-html -c")  # 生成html形式的报告
     os.system(f"allure open {root_path}report/allure-html")  # 打开html形式的报告
