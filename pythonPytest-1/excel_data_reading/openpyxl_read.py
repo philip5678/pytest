@@ -98,13 +98,13 @@ for row in rows:
     sheet.append(row)
 
 print('--------------------------------------------------')
-for row in sheet.iter_rows(min_row=1, min_col=1, max_row=6, max_col=3):
+for row in sheet.iter_rows(min_row=1, min_col=1, max_row=sheet.max_row, max_col=sheet.max_column):
     for cell in row:
         print(cell.value, end=" ")
     print()
 print('--------------------------------------------------')
 
-for row in sheet.iter_cols(min_row=1, min_col=1, max_row=6, max_col=3):
+for row in sheet.iter_cols(min_row=1, min_col=1, max_row=3, max_col=2):
     for cell in row:
         print(cell.value, end=" ")
     print()

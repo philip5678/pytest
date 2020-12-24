@@ -1,5 +1,14 @@
 #list型yaml文件 用‘-’加空格
-- languages:
+-
+        - Ruby
+        - Perl
+        - Python
+-
+    languages:
+        - Ruby
+        - Perl
+        - Python
+- languages:   #注意和上面两种的区别
     - Ruby
     - Perl
     - Python
@@ -10,7 +19,7 @@
     Perl: use.perl.org
 - hash: { name: Steve, foo: bar }
 - 1
-- 2
+- 2a
 - 3
 - 4
 
@@ -48,5 +57,6 @@
 - *showell
 
 
-#  http://www.ruanyifeng.com/blog/2016/07/yaml.html
-
+##  http://www.ruanyifeng.com/blog/2016/07/yaml.html
+#
+#
