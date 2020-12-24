@@ -19,6 +19,7 @@ class TestCaseDemo:
         print("kwargs:")
         print(kwargs)
         print(kwargs.get('cherry'))
+        print(kwargs['cherry'])
 
 
 if __name__ == '__main__':

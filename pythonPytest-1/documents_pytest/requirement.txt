@@ -58,3 +58,13 @@ pip install -r requirements.txt
 pip卸载python包且默认采用yes 
 https://blog.csdn.net/ningyanggege/article/details/104700943 
 pip uninstall -y -r requirements.txt
+
+
+
+============================= test session starts =============================
+platform win32 -- Python 3.7.0, pytest-6.2.1, py-1.10.0, pluggy-0.13.1 -- C:\Users\zhb68\PycharmProjects\pythonPytest\venv\Scripts\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.7.0', 'Platform': 'Windows-10-10.0.19041-SP0', 'Packages': {'pytest': '6.2.1', 'py': '1.10.0', 'pluggy': '0.13.1'}, 'Plugins': {'allure-pytest': '2.8.29', 'cov': '2.10.1', 'forked': '1.3.0', 'html': '3.1.1', 'metadata': '1.11.0', 'ordering': '0.6', 'rerunfailures': '9.1.1', 'sugar': '0.9.4', 'xdist': '2.2.0'}, 'JAVA_HOME': 'C:\\Program Files\\Java\\jdk-15.0.1'}
+rootdir: C:\Users\zhb68\PycharmProjects\pythonProject, configfile: pytest.ini, testpaths: C:/Users/zhb68/PycharmProjects/pythonProject/
+plugins: allure-pytest-2.8.29, cov-2.10.1, forked-1.3.0, html-3.1.1, metadata-1.11.0, ordering-0.6, rerunfailures-9.1.1, sugar-0.9.4, xdist-2.2.0
+collecting ... collected 42 items / 1 error / 41 selected

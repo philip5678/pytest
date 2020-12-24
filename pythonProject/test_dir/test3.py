@@ -19,6 +19,7 @@ global driver
 def beforeEach():
     # https://www.selenium.dev/documentation/en/webdriver/driver_requirements/
     global driver
+    print('open browser')
     driver = webdriver.Chrome()
     # driver = webdriver.Firefox()
     # driver = webdriver.Edge() #it does not work
@@ -30,6 +31,7 @@ def beforeEach():
 
 def afterEach():
     global driver
+    print('close browser!')
     driver.quit()
 
 
@@ -42,17 +44,21 @@ searchList = ['cheese', 'apple', 'pearl', 'cherry']
 @allure.story('food')
 @pytest.mark.parametrize('searchItem', searchList)
 @pytest.mark.productmanagement  # 在pytest.ini中还要设置markers
-def test_google_search(searchItem):
+def test_google_search(searchItem,qqq):
     global driver
     wait = WebDriverWait(driver, 10)
     driver.get("https://google.com/ncr")
     # driver.get("https://www.msn.com/en-us/")
-    driver.find_element_by_name("q").send_keys(
-        searchItem + Keys.RETURN)  # 加回车进行搜索
+    driver.maximize_window()  # 将浏览器最大化显示
+    # driver.set_window_size(480, 800)  # 参数数字为像素点
+    time.sleep(2)
+    driver.find_element_by_name("q").send_keys(searchItem + Keys.RETURN)  # 加回车进行搜索
     first_result = wait.until(presence_of_element_located((By.CSS_SELECTOR, "#rcnt")))
-    print(first_result.get_attribute("textContent"))
+    driver.save_screenshot(f"C:/Users/zhb68/PycharmProjects/pythonProject/screenshot/test-{str(qqq)}-{searchItem}.png")
+    # print(first_result.get_attribute("textContent"))
     print('title: ' + driver.title)
     assert 'Google' in driver.title
+    print("fixture test - " + str(qqq)+searchItem)
 
 
 product_list = [{'apple', 2}, {'cherry', 5}]
@@ -82,15 +88,19 @@ def test_google_search_furniture():
     time.sleep(1)
 
 
-@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], autouse=True, ids=['1', '11', '111'], name="qqq")
+@pytest.fixture(scope="function", params=['中国', '加拿大', '美国'], autouse=True, ids=['China', 'Canada', 'USA'], name="qqq")
 def my_fixture(request):
     print("前置 fixture practice")
     yield request.param
+    my_after_fixture()
+
+
+def my_after_fixture():
     print("后置 fixture practice")
 
 
 def test_fixture(qqq):  # 当autouse=False时，要手动加上用fixture
-    print("fixture 前置 " + str(qqq))
+    print("fixture test - " + str(qqq))
 
 
 if __name__ == '__main__':
