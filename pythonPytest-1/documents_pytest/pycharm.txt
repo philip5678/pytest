@@ -4,6 +4,7 @@ https://yangfangs.github.io/wiki/pycharm-Shortcut-key/
 - format: ctrl+alt+l
 - run: shift+F10
 - import: alt+enter
+- 查看原代码：Ctrl+B / ctrl+click
 
 Ctrl + Q	快速查看文档
 Ctrl + F1	显示错误描述或警告信息
