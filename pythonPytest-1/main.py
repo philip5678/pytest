@@ -56,3 +56,6 @@ if __name__ == '__main__':
     os.system(f"allure open {allure_html_dir}")  # 打开html形式的报告
     # os.system(f"allure serve {allure_json_dir}")  # 打开html形式的报告
     # os.system(f"allure open {allure_json_dir}")  # 打开json形式的报告
+
+    # pytest.main(['test_login.py', '-vs'])  # -v verbose, -n 运行线程数 reruns是让失败的测试再运行的次数 这行运行不是很好
+    # terminal运行命令：pytest -vs -n=2 --reruns=6 -m="smoke or usermanagement" test_login.py  #这个运行不出错

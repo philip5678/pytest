@@ -54,7 +54,7 @@ def test_google_search(searchItem, qqq):
     time.sleep(2)
     driver.find_element_by_name("q").send_keys(searchItem + Keys.RETURN)  # 加回车进行搜索
     first_result = wait.until(presence_of_element_located((By.CSS_SELECTOR, "#rcnt")))
-    driver.save_screenshot(f"C:/Users/zhb68/PycharmProjects/pythonProject/screenshot/test-{str(qqq)}-{searchItem}.png")
+    driver.save_screenshot(f"C:/Users/zhb68/PycharmProjects/pythonProject/report/screenshot/test-{str(qqq)}-{searchItem}.png")
     # print(first_result.get_attribute("textContent"))
     print('title: ' + driver.title)
     assert 'Google' in driver.title
