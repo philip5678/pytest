@@ -1,6 +1,16 @@
-- cherry: 7
-  cherry1: 7
-- cherry: 77
-  cherry1: 7
-- cherry: 9
-  cherry1: 7
+languages_dict_tuple:
+- Yaml: yaml
+- Ruby: ruby
+- Perl: perl
+- Python: python
+languages_str: 77
+w:
+- YAML: yaml.org
+- Ruby: ruby-lang.org
+- Python: python.org
+- Perl: use.perl.org
+websites_dict_tuple:
+- YAML: yaml.org
+- Ruby: ruby-lang.org
+- Python: python.org
+- Perl: use.perl.org

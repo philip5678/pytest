@@ -1,5 +1,5 @@
 import json
-
+# https://requests.readthedocs.io/zh_CN/latest/user/quickstart.html#id2
 import requests
 from requests import request
 
@@ -48,10 +48,10 @@ def login(s, userName='bob', password='123'):
     # ________________________________________________________________________________
     r = s.post(loginUrl, json=userInfo)
     token = r.json()['token']
-    print(r.json())
+    # print(r.json())
 
     r = s.get(postsUrl, params=queryParams)
-    print(r.json())
+    # print(r.json())
 
     # ________________________________________________________________________________
     # from postman
@@ -78,15 +78,20 @@ def login(s, userName='bob', password='123'):
     # print(data.decode("utf-8"))
 
     # ________________________________________________________________________________
-    # url = "https://web422blog.herokuapp.com/admin"
-    # payload = "{\r\n    \"userName\": \"rob\",\r\n    \"password\": \"123\"\r\n\r\n}"
-    # headers = {
-    #     'Content-Type': 'application/json',
-    #     'Authorization': f'jwt {token}'
-    # }
-    # response = requests.request("GET", url, headers=headers, data=payload)
+    url = "https://web422blog.herokuapp.com/admin"
+    payload = "{\r\n    \"userName\": \"rob\",\r\n    \"password\": \"123\"\r\n\r\n}"
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': f'jwt {token}'
+    }
+    response = requests.request("GET", url, headers=headers, data=payload,stream=True)
     # print(response.text)
-
+    print(response.content)
+    # print(response.json())
+    # # 在罕见的情况下，你可能想获取来自服务器的原始套接字响应，那么你可以访问
+    # # r.raw。 如果你确实想这么干，那请你确保在初始请求中设置了
+    # # stream = True。
+    # print(response.raw.read(100)) #确保在初始请求中设置了 stream=True
     return token
 
 

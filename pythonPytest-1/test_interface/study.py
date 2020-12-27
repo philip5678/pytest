@@ -1,5 +1,5 @@
 import requests
-
+# https://requests.readthedocs.io/zh_CN/latest/user/quickstart.html#id2
 r = requests.get('https://api.github.com/events')
 # r = requests.get('https://web422blog.herokuapp.com/login')
 print(f'\n{r.url=}')
@@ -43,7 +43,7 @@ r = requests.options('http://httpbin.org/get')
 print(f'\n{r.status_code=}')
 
 r = requests.get('https://api.github.com/events', stream=True)
-print(f'\n{r.raw=}')
+print(f'\n{r.raw=}') #确保在初始请求中设置了 stream=True
 # <requests.packages.urllib3.response.HTTPResponse object at 0x101194810>
 r.raw.read(10)
 print(f'\n{r.raw.read(10)=}')

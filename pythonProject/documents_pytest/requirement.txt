@@ -26,6 +26,8 @@ xlwt
 numpy==1.19.3
 xlrd==1.2.0
 
+pytest-sugar is a plugin for pytest that changes the default look and feel of pytest (e.g. progressbar, show tests that fail instantly).
+
 
 以上是注释，安装时要临时删除它们：
 python包安装或者用：
