@@ -37,7 +37,7 @@ if __name__ == '__main__':
     HtmlTestRunner_path = os.path.join(root_path, "report/report.html")
 
     if os.path.exists(allure_json_dir):
-        shutil.rmtree(os.path.join(allure_json_dir, '..'))
+        shutil.rmtree(os.path.join(allure_json_dir, '..')) #找一个指定目录的上一级目录
     if os.path.exists(htmlcov_dir):
         shutil.rmtree(htmlcov_dir)
     if os.path.exists(screenshot_dir):
