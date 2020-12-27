@@ -8,6 +8,7 @@ def login(s, userName='bob', password='123'):
     '''
     :param
     '''
+
     url = 'https://web422blogapi.herokuapp.com/api'
     loginUrl = f'{url}/login'
     postsUrl = f'{url}/posts'

@@ -5,7 +5,6 @@ import pytest
 
 product_list = [['apple', 2], ['cherry', 5]]
 
-
 @allure.step(title="first step")
 @allure.title('测试用例标题2')
 @allure.description('这是测试用例用例2的描述信息')

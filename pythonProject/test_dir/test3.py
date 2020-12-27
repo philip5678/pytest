@@ -44,7 +44,7 @@ searchList = ['cheese', 'apple', 'pearl', 'cherry']
 @allure.story('food')
 @pytest.mark.parametrize('searchItem', searchList)
 @pytest.mark.productmanagement  # 在pytest.ini中还要设置markers
-def test_google_search(searchItem,qqq):
+def test_google_search(searchItem, qqq):
     global driver
     wait = WebDriverWait(driver, 10)
     driver.get("https://google.com/ncr")
@@ -58,7 +58,7 @@ def test_google_search(searchItem,qqq):
     # print(first_result.get_attribute("textContent"))
     print('title: ' + driver.title)
     assert 'Google' in driver.title
-    print("fixture test - " + str(qqq)+searchItem)
+    print("fixture test - " + str(qqq) + searchItem)
 
 
 product_list = [{'apple', 2}, {'cherry', 5}]
