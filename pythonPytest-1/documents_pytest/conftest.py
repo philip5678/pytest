@@ -15,3 +15,6 @@ def manager_fixture02(request): #params,request,request.param都是固定写法
     print("\nmanager 前置 02 fixture practice")
     yield request.param
     print("\nmanager 后置 02 fixture practice")
+
+#conftest means configuring test
+# External plugin loading: conftest.py is used to import external plugins or modules. ... Plugins are generally files defined in your project or other modules which might be needed in your tests. You can also load a set of predefined plugins as explained here

@@ -11,7 +11,7 @@ def user_fixture01():
 
 @pytest.fixture(scope="function", params=[' - 中国队', ' - 加拿大队', ' - 美国队'], ids=["China2", "Canada2", "USA2"],
                 name="user02_alias")
-def user_fixture02(request):
+def user_fixture02(request): #params,request,request.param都是固定写法
     print("\nuser  前置 02 fixture practice")
     yield request.param
     print("\nuser  后置 02 fixture practice")
