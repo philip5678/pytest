@@ -1,8 +1,0 @@
-python -m pip install --upgrade pip setuptools wheel
-python -m pip install  pytest allure-pytest selenium virtualenv
-npm install -g allure-commandline
-
-
-python包安装或者用：
-python -m pip install --upgrade -r ./document/requirement.txt
-pip install -r ./document/requirement.txt

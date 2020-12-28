@@ -1,43 +1,43 @@
-2020-12-27-14-10-37 - test1.py - test1 - <module> - 7 - INFO - star
-2020-12-27-14-10-38 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
-2020-12-27-14-10-38 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
-2020-12-27-14-10-38 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
-2020-12-27-14-10-38 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
-2020-12-27-14-10-38 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
-2020-12-27-14-10-38 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
-2020-12-27-14-10-38 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
-2020-12-27-14-10-38 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML
-2020-12-27-14-10-38 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML
-2020-12-27-14-10-38 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML
+2020-12-27-21-54-15 - test1.py - test1 - <module> - 7 - INFO - star
+2020-12-27-21-54-15 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
+2020-12-27-21-54-15 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
+2020-12-27-21-54-15 - test1.py - test1 - test_01111 - 19 - INFO - test_01111
+2020-12-27-21-54-15 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-15 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-15 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-15 - test_pytest.py - test_pytest - test_03 - 27 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-15 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
+2020-12-27-21-54-16 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
+2020-12-27-21-54-16 - test_pytest1.py - test_pytest1 - test_01 - 14 - INFO - test_01---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest2.py - test_pytest2 - test_02 - 16 - INFO - test_02---DDT from YAML
+2020-12-27-21-54-16 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-16 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-16 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-16 - test_pytest3.py - test_pytest3 - test_03 - 15 - INFO - test_03---DDT from YAML
+2020-12-27-21-54-16 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML
+2020-12-27-21-54-16 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML
+2020-12-27-21-54-16 - test_pytest5.py - test_pytest5 - test_05 - 15 - INFO - test_05---DDT from YAML

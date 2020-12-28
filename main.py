@@ -53,7 +53,9 @@ if __name__ == '__main__':
     # os.makedirs(htmlcov_dir)
     os.makedirs(screenshot_dir)
 
-    pytest.main(['-vs'])#, f'--html={HtmlTestRunner_path}', f'--alluredir={allure_json_dir}', f'--cov={root_path}','--cov-report=html'])  # 按pytest.ini设置运行
+    pytest.main(
+        [root_path, '-vs', f'--html={HtmlTestRunner_path}', f'--alluredir={allure_json_dir}', f'--cov={root_path}',
+         '--cov-report=html'])  # 按pytest.ini设置运行
 
     os.system(f"allure generate {allure_json_dir} -o {allure_html_dir} -c")  # 生成html形式的报告
     os.system(f"allure open {allure_html_dir}")  # 打开html形式的报告
