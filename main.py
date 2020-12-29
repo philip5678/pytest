@@ -64,6 +64,12 @@
 
 #     # pytest.main(['test_login.py', '-vs'])  # -v verbose, -n 运行线程数 reruns是让失败的测试再运行的次数 加上-n 和 --reruns这些运行不是很好
 #     # terminal运行命令：pytest -vs -n=2 --reruns=6 -m="smoke or usermanagement" test_login.py  #这个运行不出错
+import time
 
 if __name__ == "__main__":
-    print('hello world')    
+    print(time.perf_counter())
+    print('hello world')
+    print(time.perf_counter())
+    time.sleep(1)
+    print(time.perf_counter())
+
