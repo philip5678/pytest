@@ -74,3 +74,5 @@ if __name__ == "__main__":
     print('hello world')
     time.sleep(10)
     print(time.perf_counter())
+
+    # C://Users//zhb68//AppData//Local//Programs//Python//Python38//Python main.py
