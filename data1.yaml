@@ -1,0 +1,26 @@
+#map型yaml文件 用冒号
+-
+  cherry: 7
+  cherry1: 7
+-
+  cherry: 8
+  cherry1: 7
+-
+  cherry: 9
+  cherry1: 7
+#languages:
+#  - Ruby
+#  - Perl
+#  - Python
+#websites:
+#  YAML: yaml.org
+#  Ruby: ruby-lang.org
+#  Python: python.org
+#  Perl: use.perl.org
+#websites1:
+#  YAML: yaml1.org
+#  Ruby: ruby-lang1.org
+#  Python: python1.org
+#  Perl: use.perl.1org
+
+# http://www.ruanyifeng.com/blog/2016/07/yaml.html

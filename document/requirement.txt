@@ -29,39 +29,3 @@ xlrd==1.2.0
 
 
 
-
-以上是注释，安装时要临时删除它们：
-python包安装或者用：
-python -m pip install --upgrade -r ./document/requirement.txt
-pip install -r ./document/requirement.txt
-
-输入pip list ，查看已安装的第三方库：
-
-问题描述：
-pip install xlrd==1.2.0 #才可打开xlsx文件
-
-问题描述：
-RuntimeError: The current Numpy installation ('D:\\soft1\\Python37\\lib\\site-packages\\numpy\\__init__.py') fails to pass a sanity check due to a bug in the windows runtime. See this issue for more information: https://tinyurl.com/y3dm3h86
-解决方案：
-先卸载numpy：pip uninstall numpy
-在安装：pip install numpy==1.19.3
-
-
-{% comment %} Python一键安装全部依赖包 
-https://blog.csdn.net/kenhins/article/details/80813155?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.nonecase
-{% endcomment %}
-{% comment %} pip 导出所有依赖并保存在一个文件中，如：requirements.txt(名字任取，也可以用package.txt)用来记录项目所有现已安装好的依赖包和版本号，
-只需要一个简单的点子命令就能完成。 {% endcomment %}
-pip freeze > requirements.txt
-
-{% comment %} 然后就可以用 {% endcomment %}
-pip install -r requirements.txt
-{% comment %} 来一次性安装requirements.txt里面所有的依赖包，真是非常方便。 {% endcomment %}
-
-{% comment %} pip卸载python包且默认采用yes 
-https://blog.csdn.net/ningyanggege/article/details/104700943 {% endcomment %}
-pip uninstall -y -r requirements.txt
-
-
-
-pip list

@@ -30,8 +30,8 @@ if __name__ == '__main__':
     print(f'{(root_path := os.path.abspath("."))=}')  # use absolut dir is the best way
     print(f'{(root_path := os.path.realpath("."))=}')
 
-    print(f'{(allure_json_dir := os.path.join(root_path, "report/allure_json"))=}')
-    print(f'{(allure_html_dir := os.path.join(root_path, "report/allure_html"))=}')
+    print(f'{(allure_json_dir := os.path.join(root_path, "report\\allure_json"))=}')
+    print(f'{(allure_html_dir := os.path.join(root_path, "report\\allure_html"))=}')
     print(f'{(htmlcov_dir := os.path.join(root_path, "htmlcov"))=}')
     print(f'{(screenshot_dir := os.path.join(root_path, "report/screenshot"))=}')
     HtmlTestRunner_path = os.path.join(root_path, "report/report.html")

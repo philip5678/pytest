@@ -1,5 +1,5 @@
 import os, dir2_
-
+os.system("dir")
 # print('***获取当前目录***')
 # print(os.getcwd())
 # print(os.path.abspath(os.path.join(os.getcwd(), ".")))
